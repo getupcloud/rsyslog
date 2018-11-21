@@ -1,0 +1,11 @@
+/var/log/cluster/*.log
+{
+    missingok
+    sharedscripts
+    rotate 10
+    size 500M
+    dateformat -%Y%m%d-%s
+    postrotate
+      /bin/kill -HUP `cat /var/run/rsyslogd.pid 2> /dev/null` 2> /dev/null || true
+    endscript
+}

@@ -1,0 +1,21 @@
+image:
+  rsyslog:
+    repository: getupcloud/rsyslog
+    tag: latest
+  pullPolicy: Always
+
+podAnnotations: {}
+
+storage:
+  size: 50Gi
+  storageClassName: gp2
+
+nodeSelector: {}
+
+resources:
+  limits:
+    cpu: 50m
+    memory: 256Mi
+  requests:
+    cpu: 10m
+    memory: 128Mi

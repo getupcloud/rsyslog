@@ -1,0 +1,5 @@
+#!/bin/sh
+
+pkill -0 crond || crond -c /etc/crontabs
+
+exec $@

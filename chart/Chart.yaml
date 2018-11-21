@@ -1,0 +1,12 @@
+name: fluent-bit-out-syslog
+version: 0.0.1
+appVersion: 8.31.0
+description: The rocket-fast system for log processing.
+keywords:
+- logging
+- monitoring
+- syslog
+- rsyslog
+maintainers:
+- name: caruccio
+  email: mateus.caruccio@getupcloud.com
