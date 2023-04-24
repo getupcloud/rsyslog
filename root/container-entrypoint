@@ -1,5 +1,8 @@
 #!/bin/sh
 
+touch /var/log/messages
+chmod 644 /etc/logrotate.d/rsyslog
+
 pkill -0 crond || crond -c /etc/crontabs
 
 exec $@

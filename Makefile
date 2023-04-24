@@ -1,4 +1,4 @@
-LATEST_VERSION := v0.1
+LATEST_VERSION := v0.3
 REPOSITORY := getupcloud
 IMAGE_NAME := rsyslog
 
